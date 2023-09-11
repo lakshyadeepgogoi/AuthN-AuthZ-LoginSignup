@@ -8,7 +8,11 @@ exports.auth = (req,res, next) => {
     try{
         //extract JWT Token
         //PENDING : other way to fetching token
-        const token = req.body.token;
+
+        console.log("cookie", req.cookies.token);
+        console.log("body", req.body.token);
+        console.log("header", req.header("Authorization"));
+        const token = req.cookies.token || req.body.token || req.header("Authorization").replace("Bearer ", "");
 
         if(!token){
             return res.status(401).json({
