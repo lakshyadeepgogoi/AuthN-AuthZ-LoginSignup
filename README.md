@@ -51,7 +51,7 @@ Before you begin, ensure you have the following installed on your machine:
 1. Clone this repository to your local machine:
 
    ```shell
-   git clone https://github.com/your-username/auth-system.git
+   git clone https://github.com/lakshyadeepgogoi/AuthN-AuthZ-LoginSignup
    ```
 
 2. Navigate to the project directory:
